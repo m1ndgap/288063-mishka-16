@@ -7,91 +7,86 @@
   <body>
 
     <div class="header">
-      <div class="logo header-logo">
-
+      <div class="logo header__logo">
+        <svg class="logo__image"></svg>
       </div>
-      <div class="menu-button header-menu-button">
-        <ul class="header-menu">
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-        </ul>
-      </div>
+      <button type='button' class="header-menu-button">
+      </button>
+      <ul class="header-menu">
+        <li class="header-menu__item">
+          <a href="/catalog" class="header-menu__link">Каталог товаров</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="/form" class="header-menu__link">Вязание на заказ</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="" class="header-menu__link">Поиск по сайту</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="/cart" class="header-menu__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="common-title">
-      <h1 class="common-title__text">каталог товаров</h1>
+    <div class="page-title">
+      <h1 class="page-title__text">каталог товаров</h1>
     </div>
 
     <div class="catalog">
-      <div class="catalog__item">
-        <img src="" alt="" class="catalog__item-image">
-        <div class="catalog__text-block">
-          <h2 class="catalog__item-title">зайчик-попрыгайчик</h2>
-          <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
-        </div>
-        <div class="catalog__order-block">
-          <p class="catalog__order-price">
-            <span class="catalog__order-price-value">1200 </span>
-            руб.
-          </p>
-          <span class="catalog__order-icon"></span>
-        </div>
-      </div>
-      <div class="catalog__item">
-        <img src="" alt="" class="catalog__item-image">
-        <div class="catalog__text-block">
-          <h2 class="catalog__item-title">Корзинка для белья</h2>
-          <p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
-        </div>
-        <div class="catalog__order-block">
-          <p class="catalog__order-price">
-            <span class="catalog__order-price-value">690</span>
-            руб.
-          </p>
-          <span class="catalog__order-icon"></span>
+      <div class="catalog-item">
+        <a class="catalog-item__image-link" href=""><img src="" alt="" class="catalog-item__image"></a>
+        <div class="catalog-item__text-block">
+          <h2 class="catalog-item__title">зайчик-попрыгайчик</h2>
+          <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+          <div class="catalog-item__order-block">
+            <p class="catalog-item__order-price">
+              <span class="catalog-item__order-price-value">1200 </span>
+              руб.
+            </p>
+            <a class="catalog-item__order-icon" href=""></a>
+          </div>
         </div>
       </div>
-      <div class="catalog__item">
-        <img src="" alt="" class="catalog__item-image">
-        <div class="catalog__text-block">
-          <h2 class="catalog__item-title">Большая корзинка tдля игрушек</h2>
-          <p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
+      <div class="catalog-item">
+        <a class="catalog-item__image-link" href=""><img src="" alt="" class="catalog-item__image"></a>
+        <div class="catalog-item__text-block">
+          <h2 class="catalog-item__title">Корзинка для белья</h2>
+          <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+          <div class="catalog-item__order-block">
+            <p class="catalog-item__order-price">
+              <span class="catalog-item__order-price-value">690 </span>
+              руб.
+            </p>
+            <a class="catalog-item__order-icon" href=""></a>
+          </div>
         </div>
-        <div class="catalog__order-block">
-          <p class="catalog__order-price">
-            <span class="catalog__order-price-value">1500</span>
-            руб.
-          </p>
-          <span class="catalog__order-icon"></span>
+      </div><div class="catalog-item">
+        <a class="catalog-item__image-link" href=""><img src="" alt="" class="catalog-item__image"></a>
+        <div class="catalog-item__text-block">
+          <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+          <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+          <div class="catalog-item__order-block">
+            <p class="catalog-item__order-price">
+              <span class="catalog-item__order-price-value">1500 </span>
+              руб.
+            </p>
+            <a class="catalog-item__order-icon" href=""></a>
+          </div>
         </div>
       </div>
-    </div>
 
     <div class="footer">
-      <div class="logo footer-logo">
-        <!-- картинка бэкграундом в стилях -->
+      <div class="logo footer__logo">
+        <svg class="logo__image"></svg>
       </div>
       <div class="footer__social">
-        <div class="footer__social-item footer__social-item--insta"></div>
-        <div class="footer__social-item footer__social-item--facebook"></div>
-        <div class="footer__social-item footer__social-item--twitter"></div>
+        <a href='' class="footer__social-item footer__social-item--insta"></a>
+        <a href='' class="footer__social-item footer__social-item--facebook"></a>
+        <a href='' class="footer__social-item footer__social-item--twitter"></a>
       </div>
-      <div class="footer__plug">
-        <p class="footer__plug-text">разработано</p>
-        <span class="footer__plug-icon"></span>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">разработано</p>
+        <span class="footer__copyright-icon"></span>
       </div>
     </div>
   </body>

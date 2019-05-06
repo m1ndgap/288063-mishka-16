@@ -7,47 +7,43 @@
   <body>
 
     <div class="header">
-      <div class="logo header-logo">
-        <!-- картинка бэкграундом в стилях -->
+      <div class="logo header__logo">
+        <svg class="logo__image"></svg>
       </div>
-      <div class="menu-button header-menu-button">
-        <ul class="header-menu">
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="" class="header-menu__link">text</a>
-          </li>
-        </ul>
-      </div>
+      <button type='button' class="header-menu-button">
+      </button>
+      <ul class="header-menu">
+        <li class="header-menu__item">
+          <a href="/catalog" class="header-menu__link">Каталог товаров</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="/form" class="header-menu__link">Вязание на заказ</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="" class="header-menu__link">Поиск по сайту</a>
+        </li>
+        <li class="header-menu__item">
+          <a href="/cart" class="header-menu__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
     </div>
-    <div class="index-category-select">
+    <div class="category-select">
     <!-- картинка бэкграундом в стилях -->
-      <h1 class="index-category-select__main-title">милые штуки ручной работы для дома</h1>
-      <div class="index-category-select__link-wrapper">
-        <a href="" class="index-category-select__link">
+      <h1 class="category-select__main-title">милые штуки ручной работы для дома</h1>
+      <div class="category-select__link-wrapper">
+        <a href="" class="category-select__link">
           предметы интерьера
-          <svg class="index-category-select__svg"></svg>
+          <svg class="category-select__svg"></svg>
         </a>
-        <a href="" class="index-category-select__link">
+        <a href="" class="category-select__link">
           детские игрушки
-          <svg class="index-category-select__svg"></svg>
+          <svg class="category-select__svg"></svg>
         </a>
       </div>
     </div>
     <div class="index-weekly-offer">
-      div.
       <div class="index-weekly-offer__title-block">
-        <p class="index-weekly-offer__main-title">вязанные корзинки</p>
+        <p class="index-weekly-offer__main-title">Вязаные корзинки</p>
         <p class="index-weekly-offer__subtitle">товар недели</p>
       </div>
       <img src="" alt="" class="index-weekly-offer__image">
@@ -55,63 +51,61 @@
         <p class="index-weekly-offer__text">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
-        <ul class="index-weekly-offer__info-list">
-          <li class="index-weekly-offer__list-item"><span>Цвет:</span>«Тиффани»/серый</li>
-          <li class="index-weekly-offer__list-item"><span>Диаметр:</span>25 см</li>
-          <li class="index-weekly-offer__list-item"><span>Высота:</span>15 см</li>
-        </ul>
+        <table class="index-weekly-offer__info-table">
+          <tr class="index-weekly-offer__table-row">
+            <td><span>Цвет:</span>«Тиффани»/серый</td>
+          </tr>
+          <tr class="index-weekly-offer__table-row">
+            <td><span>Диаметр:</span>25 см</td>
+          </tr>
+          <tr class="index-weekly-offer__table-row">
+            <td><span>Высота:</span>15 см</td>
+          </tr>
+        </table>
       </div>
       <div class="index-weekly-offer__price-block">
         <p class="index-weekly-offer__price-text">
           Цена:
           <span class="index-weekly-offer__price-number">990р</span>
         </p>
-        <button class="index-weekly-offer__order-button">Заказать</button>
+        <a href="/cart" class="index-weekly-offer__order-link">Заказать</a>
       </div>
     </div>
-    <div class="wriggly-line">
 
-    </div>
-    <div class="index-about-us">
-      <ul class="index-about-us__list">
-        <li class="index-about-us__list-item">
-          <span class="index-about-us__list-icon index-about-us__list-icon--flower"></span>
-          <p class="index-about-us__list-text">Экологически чистые материалы</p>
+    <div class="about-us">
+      <ul class="about-us__list">
+        <li class="about-us__list-item about-us__list-item--flower">
+          <p class="about-us__list-text">Экологически чистые материалы</p>
         </li>
-        <li class="index-about-us__list-item">
-          <span class="index-about-us__list-icon index-about-us__list-icon--cash"></span>
-          <p class="index-about-us__list-text">Скандинавский стиль по российской цене</p>
+        <li class="about-us__list-item about-us__list-item--cash">
+          <p class="about-us__list-text">Скандинавский стиль по российской цене</p>
         </li>
-        <li class="index-about-us__list-item">
-          <span class="index-about-us__list-icon index-about-us__list-icon--heart"></span>
-          <p class="index-about-us__list-text">Увеличивает лайки на фотографиях</p>
+        <li class="about-us__list-item about-us__list-item--heart">
+          <p class="about-us__list-text">Увеличивает лайки на фотографиях</p>
         </li>
-        <li class="index-about-us__list-item">
-          <span class="index-about-us__list-icon index-about-us__list-icon--knitting"></span>
-          <p class="index-about-us__list-text">Связано вручную с любовью и умилением</p>
+        <li class="about-us__list-item about-us__list-item--knitting">
+          <p class="about-us__list-text">Связано вручную с любовью и умилением</p>
         </li>
-        <li class="index-about-us__list-item">
-          <span class="index-about-us__list-icon index-about-us__list-icon--rocket"></span>
-          <p class="index-about-us__list-text">Поддержка отечественного производителя</p>
+        <li class="about-us__list-item about-us__list-item--rocket">
+          <p class="about-us__list-text">Поддержка отечественного производителя</p>
         </li>
-        <li class="index-about-us__list-item">
-          <span class="index-about-us__list-icon index-about-us__list-icon--present"></span>
-          <p class="index-about-us__list-text">Поставляется в подарочной упаковке</p>
+        <li class="about-us__list-item about-us__list-item--present">
+          <p class="about-us__list-text">Поставляется в подарочной упаковке</p>
         </li>
       </ul>
     </div>
     <div class="footer">
-      <div class="logo footer-logo">
-        <!-- картинка бэкграундом в стилях -->
+      <div class="logo footer__logo">
+        <svg class="logo__image"></svg>
       </div>
       <div class="footer__social">
-        <div class="footer__social-item footer__social-item--insta"></div>
-        <div class="footer__social-item footer__social-item--facebook"></div>
-        <div class="footer__social-item footer__social-item--twitter"></div>
+        <a href='' class="footer__social-item footer__social-item--insta"></a>
+        <a href='' class="footer__social-item footer__social-item--facebook"></a>
+        <a href='' class="footer__social-item footer__social-item--twitter"></a>
       </div>
-      <div class="footer__plug">
-        <p class="footer__plug-text">разработано</p>
-        <span class="footer__plug-icon"></span>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">разработано</p>
+        <span class="footer__copyright-icon"></span>
       </div>
     </div>
   </body>
