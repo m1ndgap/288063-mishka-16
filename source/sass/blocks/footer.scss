@@ -1,0 +1,7 @@
+.footer {
+  background: $lightgrey;
+}
+
+.footer__copyright-text {
+  @include fontparams(19px, 18px, $black);
+}

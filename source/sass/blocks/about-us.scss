@@ -1,0 +1,11 @@
+.about-us__list {
+  @include listreset;
+}
+
+.about-us__title {
+  @include fontparams(25px, 30px, $black, "Open Sans Bold");
+}
+
+.about-us__list-item {
+  @include fontparams(17px, 20px, $black);
+}

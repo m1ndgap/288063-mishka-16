@@ -1,0 +1,16 @@
+.catalog-item {
+  border: 1px solid $lightgrey;
+  margin: auto;
+}
+
+.catalog-item__title {
+  @include fontparams(17px, 24px, $black, "Open Sans Bold");
+}
+
+.catalog-item__description {
+  @include fontparams(13px, 24px, $black);
+}
+
+.catalog-item__order-price {
+  @include fontparams(15px, 24px, $black);
+}

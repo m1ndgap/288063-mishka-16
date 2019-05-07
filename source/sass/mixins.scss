@@ -1,0 +1,18 @@
+@mixin fontparams(
+$size,
+$lineheight,
+$color: $black,
+$family: null,
+$ttransform: null) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $lineheight;
+  color: $color;
+  text-transform: $ttransform;
+}
+
+@mixin listreset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
