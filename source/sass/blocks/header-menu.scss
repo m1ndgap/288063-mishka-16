@@ -1,8 +1,8 @@
 .header-menu {
-  @include listreset
+  @include listreset;
 }
 
 .header-menu__link {
-  @include fontparams(17px, 24px, $black, 'Open Sans Bold');
+  @include fontparams(17px, 24px, $black, "Open Sans Bold");
   text-decoration: none;
 }
