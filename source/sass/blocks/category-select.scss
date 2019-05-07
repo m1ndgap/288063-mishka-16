@@ -1,11 +1,11 @@
 .category-select {
-  background: url('../img/hero-mobile@1x.jpg');
+  background: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .category-select__main-title {
-  @include fontparams(27px, 30px, $black, 'Open Sans Bold');
+  @include fontparams(27px, 30px, $black, "Open Sans Bold");
 }
 
 .category-select__link {

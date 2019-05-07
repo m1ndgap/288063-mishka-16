@@ -3,5 +3,5 @@
 }
 
 .page-title__text {
-
+  @include fontparams(27px, 30px, $black, "Open Sans Bold");
 }

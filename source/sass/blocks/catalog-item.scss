@@ -4,7 +4,7 @@
 }
 
 .catalog-item__title {
-  @include fontparams(17px, 24px, $black, 'Open Sans Bold');
+  @include fontparams(17px, 24px, $black, "Open Sans Bold");
 }
 
 .catalog-item__description {
