@@ -3,7 +3,8 @@
 }
 
 .about-us__title {
-  @include fontparams(25px, 30px, $black, "Open Sans Bold");
+  @include fontparams(25px, 30px, $black);
+  font-weight: 700;
 }
 
 .about-us__list-item {

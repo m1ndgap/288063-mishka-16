@@ -5,7 +5,8 @@
 }
 
 .category-select__main-title {
-  @include fontparams(27px, 30px, $black, "Open Sans Bold");
+  @include fontparams(27px, 30px, $black);
+  font-weight: 700;
 }
 
 .category-select__link {

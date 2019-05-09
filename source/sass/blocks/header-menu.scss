@@ -3,6 +3,7 @@
 }
 
 .header-menu__link {
-  @include fontparams(17px, 24px, $black, "Open Sans Bold");
+  @include fontparams(17px, 24px, $black);
+  font-weight: 700;
   text-decoration: none;
 }

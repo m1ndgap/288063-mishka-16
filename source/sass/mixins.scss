@@ -2,9 +2,7 @@
 $size,
 $lineheight,
 $color: $black,
-$family: null,
 $ttransform: null) {
-  font-family: $family;
   font-size: $size;
   line-height: $lineheight;
   color: $color;
@@ -15,4 +13,8 @@ $ttransform: null) {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@mixin font {
+  font-family: "Open Sans", Arial, sans-serif;
 }
