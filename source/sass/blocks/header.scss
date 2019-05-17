@@ -1,3 +1,18 @@
 .header {
-  padding: 10px;
+  width: 100%;
+  background: $white;
+
 }
+
+  @media (min-width: 769px) {
+    .header {
+      height: 90px;
+      overflow: visible;
+    }
+  }
+
+  @media (min-width: 1151px) {
+    .header {
+      max-height: 90px;
+    }
+  }
