@@ -3,6 +3,8 @@
   background: $black;
   height: 70px;
   width: 150px;
+  //temporary fix for mobile clickability
+  overflow: hidden;
 }
 
 @media (min-width: 769px) {
@@ -17,4 +19,13 @@
     // mock style
     background: lighten($black, 50%);
   }
+}
+
+.logo__image {
+  height: 100%;
+}
+
+.logo__link {
+  display: block;
+  height: 100%;
 }
