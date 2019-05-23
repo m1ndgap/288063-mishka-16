@@ -9,15 +9,15 @@ body {
   width: 100%;
 }
 
-  @media (min-width: 768px) {
-    .container {
-      width: 668px;
-      margin: 0 auto;
-    }
+@media (min-width: 768px) {
+  .container {
+    width: 668px;
+    margin: 0 auto;
   }
+}
 
-  @media (min-width: 1150px) {
-    .category-select__link-wrapper {
-        width: 1150px;
-    }
+@media (min-width: 1150px) {
+  .category-select__link-wrapper {
+      width: 1150px;
   }
+}
