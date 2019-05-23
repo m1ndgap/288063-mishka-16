@@ -3,7 +3,6 @@
   background: none;
   display: flex;
   flex-flow: column nowrap;
-  background: none;
 }
 
 @media (min-width: 768px) {
@@ -24,11 +23,7 @@
   }
 }
 
-.header-menu__link {
-  @include fontparams(17px, 24px, $black);
-  font-weight: 700;
-  text-decoration: none;
-}
+
 
 .header-menu__logo-n-button-wrapper {
   position: relative;
@@ -58,22 +53,22 @@
 
 .header-menu__button {
   position: absolute;
-  right: 0px;
+  right: 0;
   display: block;
   width: 40px;
   height: 40px;
 }
 
-  @media (min-width: 768px) {
-    .header-menu__button {
-      display: none;
-    }
+@media (min-width: 768px) {
+  .header-menu__button {
+    display: none;
   }
+}
 
-  // @media (min-width: 1150px) {
-  //   .header-menu__button {
-  //   }
-  // }
+// @media (min-width: 1150px) {
+//   .header-menu__button {
+//   }
+// }
 
 .header-menu__list {
   @include listreset;
@@ -89,7 +84,7 @@
     order: 3;
     display: flex;
     flex-basis: 60%;
-    max-height: 0px;
+    max-height: 0;
   }
 }
 
@@ -118,14 +113,14 @@
   .header-menu__service-list {
     order: 3;
     flex-basis: 40%;
-    max-height: 0px;
+    max-height: 0;
   }
 }
 
 .header-menu__promo-list {
   clip-path: polygon(0 0, 0 0, 0 0, 0 0);
-  max-height: 0px;
-  max-width: 0px;
+  max-height: 0;
+  max-width: 0;
   overflow: hidden;
   order: 5;
 }
@@ -151,6 +146,9 @@
 }
 
 .header-menu__link {
+  @include fontparams(17px, 24px, $black);
+  font-weight: 700;
+  text-decoration: none;
   display: block;
   width: 100%;
   text-align: center;
