@@ -1,7 +1,7 @@
 .category-select__link-wrapper {
+  @include container;
   display: flex;
   flex-flow: column nowrap;
-  @include container;
 }
 
 @media (min-width: 768px) {
