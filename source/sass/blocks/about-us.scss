@@ -1,5 +1,36 @@
+.about-us {
+  @include container-mob-padding;
+}
+
+// @media (min-width: 768px) {
+//   .about-us {
+//
+//   }
+// }
+//
+@media (min-width: 1150px) {
+  .about-us {
+    box-sizing: border-box;
+    padding-left: 175px;
+
+  }
+}
+
 .about-us__list {
   @include listreset;
+}
+
+@media (min-width: 768px) {
+  .about-us__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us__list {
+
+  }
 }
 
 .about-us__title {
@@ -9,4 +40,39 @@
 
 .about-us__list-item {
   @include fontparams(17px, 20px, $black);
+  margin-top: 30px;
+  padding-top: 40px;
+  font-weight: 700;
+  background-image: url('../img/icon-feature-flower.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 60px
+}
+
+@media (min-width: 768px) {
+  .about-us__list-item {
+    flex-basis: 50%
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us__list-item {
+
+  }
+}
+
+.about-us__list-text {
+  @include resettext;
+}
+
+@media (min-width: 768px) {
+  .about-us__list-text {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us__list-text {
+
+  }
 }

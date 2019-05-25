@@ -1,8 +1,36 @@
 .page-title {
   background: $lightgrey;
+  height: 176px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    height: 225px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-title {
+    height: 254px;
+  }
 }
 
 .page-title__text {
   @include fontparams(27px, 30px, $black);
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .page-title__text {
+    @include fontparams(43px, 50px, $black);
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-title__text {
+    @include fontparams(53px, 57px, $black);
+  }
 }

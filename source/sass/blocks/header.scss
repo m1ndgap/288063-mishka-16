@@ -3,10 +3,10 @@
   background: $white;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .header {
-    height: 90;
     overflow: visible;
+    max-height: 90px;
   }
 }
 
@@ -21,14 +21,14 @@
   order: 6;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .header__note {
     display: flex;
     max-height: 0;
   }
 }
 
-@media (min-width: 1151px) {
+@media (min-width: 1150px) {
   .header__note {
     max-height: 0;
   }

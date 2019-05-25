@@ -72,13 +72,13 @@
   @include listreset;
 }
 
-.header-menu__nav-list {
+.header-menu__list--nav-list {
   order: 2;
   max-height: 1000px;
 }
 
 @media (min-width: 768px) {
-  .header-menu__nav-list {
+  .header-menu__list--nav-list {
     order: 3;
     display: flex;
     flex-basis: 60%;
@@ -87,19 +87,19 @@
 }
 
 @media (min-width: 1150px) {
-  .header-menu__nav-list {
+  .header-menu__list--nav-list {
     order: 1;
     flex-basis: 40%;
     max-height: 1000px;
   }
 }
 
-.header-menu__service-list {
+.header-menu__list--service-list {
   order: 3;
 }
 
 @media (min-width: 768px) {
-  .header-menu__service-list {
+  .header-menu__list--service-list {
     order: 2;
     flex-basis: 60%;
     display: flex;
@@ -108,30 +108,29 @@
 }
 
 @media (min-width: 1150px) {
-  .header-menu__service-list {
+  .header-menu__list--service-list {
     order: 3;
     flex-basis: 40%;
     max-height: 0;
   }
 }
 
-.header-menu__promo-list {
-  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+.header-menu__list--promo-list {
+  display: none;
   max-height: 0;
   max-width: 0;
   overflow: hidden;
   order: 5;
 }
 
-@media (min-width: 768px) {
-  .header-menu__promo-list {
-    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
-  }
-}
+// @media (min-width: 768px) {
+//   .header-menu__list--promo-list {
+//
+//   }
+// }
 
 @media (min-width: 1150px) {
-  .header-menu__promo-list {
-    clip-path: none;
+  .header-menu__list--promo-list {
     max-height: 1000px;
     max-width: 1000px;
     display: flex;

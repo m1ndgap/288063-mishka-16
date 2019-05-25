@@ -1,10 +1,122 @@
+.weekly-offer {
+  @include container-mob-padding;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@media (min-width: 768px) {
+  .weekly-offer  {
+    //temporary style
+    height: 532px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .weekly-offer  {
+    //temporary style
+    height: 706px;
+  }
+}
+
+.weekly-offer__image {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  order: 3;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .weekly-offer__image {
+    max-width: 332px;
+    position: absolute;
+    right: 0;
+    top: 120px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .weekly-offer__image {
+    max-width: 523px;
+    top: 72px;
+  }
+}
+
+.weekly-offer__title-block {
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .weekly-offer__title-block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1150px) {
+  .weekly-offer__title-block {
+    justify-content: flex-start;
+    margin-top: 126px;
+  }
+}
+
 .weekly-offer__main-title {
   @include fontparams(25px, 30px, $black);
+  @include resettext;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .weekly-offer__main-title {
+    @include fontparams(43px, 50px, $black);
+  }
+}
+
+@media (min-width: 1150px) {
+  .weekly-offer__main-title {
+    @include fontparams(53px, 57px, $black);
+    z-index: 1;
+    order: 2;
+  }
 }
 
 .weekly-offer__subtitle {
   @include fontparams(17px, 20px, $teal, $ttransform: uppercase);
+  @include resettext;
+}
+
+@media (min-width: 768px) {
+  .weekly-offer__subtitle {
+    white-space: pre-line;
+  }
+}
+
+@media (min-width: 1150px) {
+  .weekly-offer__subtitle {
+    text-align: center;
+    order: 1;
+    width: 175px;
+  }
+}
+
+.weekly-offer__text-block {
+  order: 2;
+}
+
+@media (min-width: 768px) {
+  .weekly-offer__text-block {
+    margin-top: 12px;
+    max-width: 292px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .weekly-offer__text-block {
+    margin-left: 175px;
+  }
 }
 
 .weekly-offer__text,
@@ -12,8 +124,32 @@
   @include fontparams(15px, 24px, $black);
 }
 
+.weekly-offer__text {
+  @include resettext;
+}
+
 .weekly-offer__table-header {
   font-weight: 400;
+  text-align: left;
+}
+
+.weekly-offer__price-block {
+  order: 4;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .weekly-offer__price-block {
+    max-width: 292px;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .weekly-offer__price-block {
+    margin-left: 175px;
+    margin-top: auto;
+  }
 }
 
 .weekly-offer__price-text {
