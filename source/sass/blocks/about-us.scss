@@ -1,9 +1,9 @@
 .about-us {
   @include container-mob-padding;
 
-// @media (min-width: 768px) {
-//
-// }
+  // @media (min-width: 768px) {
+  //
+  // }
 
   @media (min-width: 1150px) {
     box-sizing: border-box;
@@ -18,9 +18,9 @@
     column-count: 2;
   }
 
-// @media (min-width: 1150px) {
-//
-// }
+  // @media (min-width: 1150px) {
+  //
+  // }
 }
 
 .about-us__title {
@@ -40,8 +40,9 @@
 
   @media (min-width: 768px) {
     flex-basis: 50%;
+
     &:nth-child(1) {
-      margin-top: 0px
+      margin-top: 0;
     }
   }
 
