@@ -14,19 +14,16 @@
   border: 1px solid $lightgrey;
   margin: 30px;
   width: 260px;
-}
 
-@media (min-width: 768px) {
-  .catalog-item {
+
+  @media (min-width: 768px) {
     height: 334px;
     width: 668px;
     display: flex;
     flex-flow: column wrap;
   }
-}
 
-@media (min-width: 1150px) {
-  .catalog-item {
+  @media (min-width: 1150px) {
     height: 660px;
     width: 317px;
   }
@@ -43,23 +40,21 @@
   height: 196px;
   width: 260px;
   background-color: $teal;
-}
 
-@media (min-width: 768px) {
-  .catalog-item__image-link {
+
+  @media (min-width: 768px) {
     //test styles
     height: 334px;
     width: 332px;
   }
-}
 
-@media (min-width: 1150px) {
-  .catalog-item__image-link {
+  @media (min-width: 1150px) {
     //test styles
     height: 464px;
     width: 317px;
   }
 }
+
 
 .catalog-item__description {
   @include fontparams(13px, 24px, $black);

@@ -2,19 +2,15 @@
   @include container;
   display: flex;
   flex-flow: column nowrap;
-}
 
-@media (min-width: 768px) {
-  .category-select__link-wrapper {
+
+  @media (min-width: 768px) {
     flex-flow: row nowrap;
   }
-}
 
-// @media (min-width: 1150px) {
-//   .category-select__link-wrapper {
-//
-//   }
-// }
+  // @media (min-width: 1150px) {
+  // }
+}
 
 .category-select__link {
   @include fontparams(19px, 24px, $white);
@@ -30,19 +26,15 @@
   &--toys {
     background: $dteal;
   }
-}
 
-@media (min-width: 768px) {
-  .category-select__link {
+  @media (min-width: 768px) {
     flex-basis: 50%;
   }
-}
 
-// @media (min-width: 1150px) {
-//   .category-select__link {
-//
-//   }
-// }
+
+  // @media (min-width: 1150px) {
+  // }
+}
 
 .category-select__svg {
   //temp styles

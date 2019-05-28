@@ -1,35 +1,28 @@
 .header {
   width: 100%;
   background: $white;
-}
 
-@media (min-width: 768px) {
-  .header {
+
+  @media (min-width: 768px) {
     overflow: visible;
     max-height: 90px;
   }
-}
 
-// @media (min-width: 1151px) {
-//   .header {
-//   }
-// }
+  // @media (min-width: 1151px) {
+  // }
+}
 
 .header__note {
   display: none;
   max-height: 0;
   order: 6;
-}
 
-@media (min-width: 768px) {
-  .header__note {
+  @media (min-width: 768px) {
     display: flex;
     max-height: 0;
   }
-}
 
-@media (min-width: 1150px) {
-  .header__note {
+  @media (min-width: 1150px) {
     max-height: 0;
   }
 }
